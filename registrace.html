@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&family=Shadows+Into+Light&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="hlavicka">
+      <div class="logo">
+        <img
+          class="ikonka"
+          src="obrazky/iconmonstr-webcam-4-240.png"
+          alt="webka"
+        />YOUR WEBCAM
+      </div>
+      <div class="hamburgerMenu">
+        <p>
+          <span style="font-size: 1.5rem; font-family: Oswald; color: #413e3e"
+            >≡ Menu</span
+          >
+        </p>
+      </div>
+      <ul class="menu">
+        <li><a href="index.html">Úvod</a></li>
+        <li><a href="uvod.html">Domů</a></li>
+        <li><a href="index.html">Podporované web kamery</a></li>
+        <li><a href="cenik.html">Ceník</a></li>
+        <li>
+          <a href="cenik.html"
+            ><button>
+              <img
+                class="ucetAregistrace"
+                src="obrazky/iconmonstr-user-5.svg"
+              />Můj účet
+            </button></a
+          >
+        </li>
+        <li>
+          <a href="registrace.html"
+            ><button>
+              <img
+                class="ucetAregistrace"
+                src="obrazky/iconmonstr-edit-5.svg"
+              />Zaregistrovat se
+            </button></a
+          >
+        </li>
+      </ul>
+    </header>
+    <div class="kontejner">
+      <h3>REGISTRACE Vášeho účtu YOUR WEBCAM</h3>
+      <p>
+        S účtem Your Webcam budete jednoduše ovládat a spravovat Vaší historii
+        snímků s těmito výhodami:
+      </p>
+      <div class="obrazRegistrace">
+        <ul style="line-height: 2.5rem">
+          <li>Jednoduché ovládání po zadání e-mailové adresy a hesla.</li>
+          <li>Přehled a sledování snímku ve vámi určený časový horizont.</li>
+          <li>Možnost zaslání vybraných snímků na libovolný e-mail.</li>
+        </ul>
+        <img
+          class="registrace"
+          src="obrazky/registrace.jpg"
+          alt="vyplnění registrace"
+        />
+      </div>
+      <hr />
+      <form method="POST" class="formularRegistrace" action="https://">
+        <!--Zacatek poli uctu-->
+        <fieldset>
+          <h3>Jsem nový zákazník</h3>
+          <ul class="formularovePole">
+            <li>
+              <label for="jmeno">Jméno: </label>
+              <input
+                type="text"
+                id="jmeno"
+                name="jmeno"
+                class="velke"
+                required="required"
+                placeholder="Zadejte své jméno"
+              />
+            </li>
+            <li>
+              <label for="prijmeni">Příjmení: </label>
+              <input type="text" id="prijmeni" name="prijmeni" class="velke" />
+            </li>
+            <li>
+              <label for="email">E-mail: </label>
+              <input type="email" id="email" name="email" class="velke" />
+            </li>
+            <li>
+              <label for="heslo">Heslo: </label>
+              <input type="heslo" id="heslo" name="heslo" class="velke" />
+            </li>
+          </ul>
+        </fieldset>
+        <!--Konec poli uctu-->
+        <!--Zacatak poli adresy-->
+        <fieldset>
+          <h3>Adresa</h3>
+          <ul class="formularovePole">
+            <li>
+              <label for="ulice_a cislo_domu">Ulice a číslo domu: </label>
+              <input
+                type="text"
+                id="ulice_a cislo_domu"
+                name="ulice_a cislo_domu"
+                class="velke"
+              />
+            </li>
+            <li>
+              <label for="mesto">Město: </label>
+              <input type="text" id="mesto" name="mesto" class="velke" />
+            </li>
+            <li>
+              <label for="stat">Stát: </label>
+              <select id="stat" name="stat">
+                <option value="CZ">Česká republika</option>
+                <option value="SK">Slovensko</option>
+                <option value="DE">Něměcko</option>
+                <option value="Pl">Polsko</option>
+              </select>
+            </li>
+            <li>
+              <label for="psc">PSČ: </label>
+              <input type="text" id="psc" name="psc" class="male" />
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+    <footer class="paticka">
+      <p>&copy; N&K&J DA WEB 2021</p>
+    </footer>
+  </body>
+</html>
