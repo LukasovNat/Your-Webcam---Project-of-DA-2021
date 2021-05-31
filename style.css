@@ -1,0 +1,226 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.5;
+  text-align: start;
+  background-attachment: fixed;
+  background: hsla(20, 28%, 75%, 1);
+
+  background: linear-gradient(
+    360deg,
+    hsla(20, 28%, 75%, 1) 0%,
+    hsla(23, 65%, 87%, 1) 25%,
+    hsla(28, 37%, 90%, 1) 50%,
+    hsla(120, 60%, 99%, 1) 75%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    360deg,
+    hsla(20, 28%, 75%, 1) 0%,
+    hsla(23, 65%, 87%, 1) 25%,
+    hsla(28, 37%, 90%, 1) 50%,
+    hsla(120, 60%, 99%, 1) 75%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    360deg,
+    hsla(20, 28%, 75%, 1) 0%,
+    hsla(23, 65%, 87%, 1) 25%,
+    hsla(28, 37%, 90%, 1) 50%,
+    hsla(120, 60%, 99%, 1) 75%,
+    hsla(0, 0%, 100%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#d0b8ac", endColorstr="#f3d8c7", GradientType=1 );
+  /*background-color: rgb(228, 223, 223);*/
+  /*background-image: url('obrazky/mobil\ more.jpg');*/
+  /*background: hsla(355, 78%, 56%, 1);
+
+  background: linear-gradient(
+    180deg,
+    hsla(355, 78%, 56%, 1) 0%,
+    hsla(105, 55%, 96%, 1) 25%,
+    hsla(182, 43%, 76%, 1) 50%,
+    hsla(203, 39%, 44%, 1) 75%,
+    hsla(215, 50%, 23%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    180deg,
+    hsla(355, 78%, 56%, 1) 0%,
+    hsla(105, 55%, 96%, 1) 25%,
+    hsla(182, 43%, 76%, 1) 50%,
+    hsla(203, 39%, 44%, 1) 75%,
+    hsla(215, 50%, 23%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    180deg,
+    hsla(355, 78%, 56%, 1) 0%,
+    hsla(105, 55%, 96%, 1) 25%,
+    hsla(182, 43%, 76%, 1) 50%,
+    hsla(203, 39%, 44%, 1) 75%,
+    hsla(215, 50%, 23%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#e63946", endColorstr="#f1faee", GradientType=1 );
+  background-attachment: fixed;*/
+}
+.hlavicka {
+  background-color: #d0b8ac;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+a {
+  display: block;
+
+  color: #413e3e;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 13px;
+  font-size: 1.5rem;
+}
+a:hover {
+  background-color: darkgray;
+  color: white;
+}
+.menu {
+  display: flex;
+  margin-right: 15px;
+}
+ul {
+  list-style: none;
+}
+.logo {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 15px;
+  color: #413e3e;
+}
+.ikonka {
+  width: 4rem;
+  position: relative;
+  left: auto;
+  top: 17px;
+}
+.uvodStranaSPozadim {
+  padding: 250px 80px;
+  background-image: url('obrazky/kamera\ na\ zdi.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  max-width: 80%;
+  margin: auto;
+}
+.uvodSlogan {
+  font-family: 'Oswald';
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  /*text-shadow: 3px 3px 7px #666666;*/
+}
+.kontejner {
+  max-width: 40rem;
+  margin: auto;
+}
+p {
+  font-family: sans-serif;
+}
+.uvodText {
+  font-family: 'Oswald';
+  font-size: 1rem;
+  color: #413e3e;
+  /*background-color: rgb(206, 179, 110);*/
+  text-align: center;
+  font-weight: bold;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.buttonHlavni {
+  background-color: #197278; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  border-radius: 1.5rem;
+}
+h1,
+h3 {
+  text-align: center;
+}
+h1 {
+  background-color: #ee9b00;
+  border-radius: 1.5rem;
+}
+/*stylovani galerie v ceniku*/
+.obrazkyDiv {
+  display: inline-block;
+}
+.obrazekPes {
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 18%;
+}
+.obrazekDvereOriginal {
+  border-width: 1.5px;
+  border-style: solid;
+  border-radius: 5px;
+  width: 25%;
+}
+/*konec*/
+.galerie {
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 10px;
+}
+
+.paticka {
+  color: #413e3e;
+  text-align: center;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 0.7rem;
+}
+@media (min-width: 575px) {
+  .uvodStranaSPozadim {
+    padding: 100px 40px;
+    background-image: url('obrazky/kamera\ na\ zdi.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+
+    opacity: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 575px) {
+  .hamburgerMenu {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .menu {
+    display: none;
+  }
+}
