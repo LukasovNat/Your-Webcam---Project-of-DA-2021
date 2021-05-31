@@ -173,7 +173,8 @@ p {
   justify-content: space-between;
   align-items: center;
 }
-.buttonHlavni {
+.buttonHlavni,
+.vytvorit_ucet {
   background-color: #197278; /* Green */
   border: none;
   color: white;
@@ -221,9 +222,10 @@ h1 {
 /*stylovani registracniho formulare*/
 .obrazRegistrace {
   display: flex;
+  font-family: sans-serif;
 }
-.registrace {
-  max-width: 40%;
+.imgRegistrace {
+  max-width: 50%;
 }
 fieldset {
   background-color: #f1f1f1;
@@ -233,7 +235,7 @@ fieldset {
   padding: 0 10px;
 }
 .formularovePole {
-  background-color: rgb(240, 195, 195);
+  background-color: #fde2e4;
   border: 1px solid #eaeaea;
   list-style: none;
   padding: 12px;
@@ -242,12 +244,27 @@ fieldset {
 li {
   margin: 0.5em 0;
 }
-label {
-  display: inline-flex;
+ul label {
+  font-size: large;
+  font-weight: bolder;
 }
 input {
-  align-items: flex-end;
+  width: 100%;
+  min-height: 2.8rem;
+  font-size: 1rem;
 }
+.buttonVyber {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.vytvorit_ucet {
+  background-color: #ee9b00;
+  font-family: 'Oswald';
+  color: #eaeaea;
+}
+
+/*footer*/
 .paticka {
   color: #413e3e;
   text-align: center;

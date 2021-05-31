@@ -73,16 +73,14 @@
         snímků s těmito výhodami:
       </p>
       <div class="obrazRegistrace">
-        <ul style="line-height: 2.5rem">
+        <ul>
           <li>Jednoduché ovládání po zadání e-mailové adresy a hesla.</li>
           <li>Přehled a sledování snímku ve vámi určený časový horizont.</li>
           <li>Možnost zaslání vybraných snímků na libovolný e-mail.</li>
         </ul>
-        <img
-          class="registrace"
-          src="obrazky/registrace.jpg"
-          alt="vyplnění registrace"
-        />
+        <img class="imgRegistrace"
+        src="obrazky/registrace.jpg"
+        alt="registrace uzivatele">
       </div>
       <hr />
       <form method="POST" class="formularRegistrace" action="https://">
@@ -133,21 +131,67 @@
               <label for="mesto">Město: </label>
               <input type="text" id="mesto" name="mesto" class="velke" />
             </li>
-            <li>
+            <!--<li>
               <label for="stat">Stát: </label>
               <select id="stat" name="stat">
-                <option value="CZ">Česká republika</option>
+                <option value="CZ" class="velke">Česká republika</option>
                 <option value="SK">Slovensko</option>
                 <option value="DE">Něměcko</option>
                 <option value="Pl">Polsko</option>
               </select>
-            </li>
+            </li>-->
             <li>
               <label for="psc">PSČ: </label>
               <input type="text" id="psc" name="psc" class="male" />
             </li>
           </ul>
         </fieldset>
+        <!--Konec pole adresy-->
+        <!--Zacatek vyber sluzby-->
+        <fieldset>
+          <h3>Výběr poskutovaného balíčku služeb</h3>
+          <ul class="formularovePole">
+            <li class="buttonVyber">
+              <label for="typ_sluzby">Free </label>
+              <input
+              type="radio"
+              value="souhlasim"
+              id="typ_sluzby"
+             
+              />
+            </li>
+            <li class="buttonVyber">
+              <label for="typ_sluzby">Standard </label>
+              <input
+              type="radio"
+              value="souhlasim"
+              id="typ_sluzby"
+              
+              />
+            </li>
+            <li class="buttonVyber">
+              <label for="typ_sluzby">Premium</label>
+              <input
+              type="radio"
+              value="souhlasim"
+              id="typ_sluzby"
+              
+              /> 
+            </li>
+            <li class="buttonVyber">
+              <label for="typ_sluzby">Vyzkoušet Premium na 14 dní ZDARMA</label>
+              <input
+              type="radio"
+              value="souhlasim"
+              id="typ_sluzby"
+              
+              /> 
+            </li>
+            </ul>
+      <!--Konec vyberu sluzby-->
+      <fieldset>
+        <input type="submit" class="vytvorit_ucet" value="Vytvořit účet">
+      </fieldset>
       </form>
     </div>
     <footer class="paticka">
