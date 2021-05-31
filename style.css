@@ -261,7 +261,7 @@ input {
 .vytvorit_ucet {
   background-color: #ee9b00;
   font-family: 'Oswald';
-  color: #eaeaea;
+  color: #141414;
 }
 
 /*footer*/
@@ -292,6 +292,11 @@ input {
 }
 @media (max-width: 575px) {
   .menu {
+    display: none;
+  }
+}
+@media (max-width: 575px) {
+  .imgRegistrace {
     display: none;
   }
 }
