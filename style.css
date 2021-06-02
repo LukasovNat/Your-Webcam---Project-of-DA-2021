@@ -103,7 +103,7 @@ ul {
 }
 .logo {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: 15px;
   color: #413e3e;
 }
@@ -113,11 +113,11 @@ ul {
   left: auto;
   top: 17px;
 }
-ul button {
+/*.ucetAregistrace {
   background-color: #ee9b00;
   border: none;
   color: white;
-  padding: 8px 16px;
+  padding: 4px 8px;
   text-align: center;
   text-decoration: none;
   font-size: 1rem;
@@ -127,7 +127,7 @@ ul button {
   font-weight: bolder;
   border-radius: 1.5rem;
   display: inline-flex;
-}
+}*/
 
 li img {
   position: relative;
@@ -153,7 +153,7 @@ li img {
   /*text-shadow: 3px 3px 7px #666666;*/
 }
 .kontejner {
-  max-width: 40rem;
+  max-width: 45rem;
   margin: auto;
 }
 p {
@@ -162,7 +162,7 @@ p {
 .uvodText {
   font-family: 'Oswald';
   font-size: 1rem;
-  color: #413e3e;
+  color: #141414;
   /*background-color: rgb(206, 179, 110);*/
   text-align: center;
   font-weight: bold;
@@ -197,15 +197,33 @@ h1 {
   background-color: #ee9b00;
   border-radius: 1.5rem;
 }
+/*stylovani stranky domu*/
+
 /*stylovani galerie v ceniku*/
 .obrazkyDiv {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  background-color: #c9c3c3;
 }
+.miniaturyDiv {
+  display: flex;
+  overflow-x: auto;
+}
+.aktualniSnimek,
+.miniatury {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
 .obrazekPes {
-  border-width: 1.5px;
+  border-width: 2px;
   border-style: solid;
+  border-color: #141414;
   border-radius: 5px;
-  width: 18%;
+  width: 90%;
+  padding: 0px, opx;
 }
 .obrazekDvereOriginal {
   border-width: 1.5px;
@@ -262,7 +280,8 @@ input {
   background-color: #ee9b00;
   font-family: 'Oswald';
   color: #141414;
-}
+} /*konec*/
+/*stylovani muj ucet*/
 
 /*footer*/
 .paticka {
@@ -285,18 +304,35 @@ input {
     margin: auto;
   }
 }
+@media (max-width: 800px) {
+  .menu {
+    width: 60%;
+    font-size: 1rem;
+  }
+}
 @media (min-width: 575px) {
   .hamburgerMenu {
     display: none;
   }
 }
 @media (max-width: 575px) {
-  .menu {
+  .menu,
+  li button {
     display: none;
   }
 }
 @media (max-width: 575px) {
   .imgRegistrace {
     display: none;
+  }
+}
+@media (max-width: 575px) {
+  .miniatury {
+    width: 85%;
+  }
+}
+@media (max-width: 575px) {
+  p {
+    font-size: 0.7rem;
   }
 }
