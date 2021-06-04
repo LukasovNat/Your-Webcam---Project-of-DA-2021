@@ -82,12 +82,11 @@ body {
 
 a {
   display: block;
-
   color: #413e3e;
   text-decoration: none;
   font-weight: bold;
-  padding: 13px;
-  font-size: 1.5rem;
+  padding: 8px;
+  font-size: 1.2rem;
 }
 a:hover {
   background-color: darkgray;
@@ -103,8 +102,8 @@ ul {
 }
 .logo {
   font-weight: bold;
-  font-size: 2.5rem;
-  margin: 15px;
+  font-size: 1.5rem;
+  margin: 10px;
   color: #413e3e;
 }
 .ikonka {
@@ -190,6 +189,7 @@ p {
   border-radius: 1.5rem;
 }
 h1,
+h2,
 h3 {
   text-align: center;
 }
@@ -203,7 +203,8 @@ h1 {
 .obrazkyDiv {
   display: flex;
   flex-direction: column;
-  background-color: #c9c3c3;
+  background-color: #82886f;
+  border-radius: 10px;
 }
 .miniaturyDiv {
   display: flex;
@@ -218,19 +219,14 @@ h1 {
 }
 
 .obrazekPes {
-  border-width: 2px;
+  border-width: 2.5px;
   border-style: solid;
-  border-color: #141414;
+  border-color: whitesmoke;
   border-radius: 5px;
   width: 90%;
   padding: 0px, opx;
 }
-.obrazekDvereOriginal {
-  border-width: 1.5px;
-  border-style: solid;
-  border-radius: 5px;
-  width: 25%;
-}
+
 /*konec*/
 .galerie {
   display: flex;
@@ -244,6 +240,7 @@ h1 {
 }
 .imgRegistrace {
   max-width: 50%;
+  border-radius: 10px;
 }
 fieldset {
   background-color: #f1f1f1;
@@ -253,7 +250,7 @@ fieldset {
   padding: 0 10px;
 }
 .formularovePole {
-  background-color: #fde2e4;
+  background-color: #acb09f;
   border: 1px solid #eaeaea;
   list-style: none;
   padding: 12px;
@@ -283,6 +280,17 @@ input {
 } /*konec*/
 /*stylovani muj ucet*/
 
+.prihlaseniMujUcet {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  font-size: 1rem;
+}
+.ucetUvod {
+  font-weight: normal;
+  text-align: left;
+  font-size: medium;
+}
 /*footer*/
 .paticka {
   color: #413e3e;
@@ -291,9 +299,9 @@ input {
   margin-top: 0px;
   font-size: 0.7rem;
 }
-@media (min-width: 575px) {
+@media (max-width: 575px) {
   .uvodStranaSPozadim {
-    padding: 100px 40px;
+    padding: 20px 40px;
     background-image: url('obrazky/kamera\ na\ zdi.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -304,6 +312,18 @@ input {
     margin: auto;
   }
 }
+@media (max-width: 575px) {
+  .kontejner {
+    width: 100%;
+  }
+}
+
+/*@media (max-width: 576px) {
+  .menu {
+    width: 50%;
+    font-size: 10px;
+  }
+}*/
 @media (max-width: 800px) {
   .menu {
     width: 60%;
@@ -327,12 +347,24 @@ input {
   }
 }
 @media (max-width: 575px) {
+  .textKObrazkum {
+    font-size: 00.7rem;
+    font-weight: bolder;
+  }
+}
+@media (max-width: 575px) {
   .miniatury {
     width: 85%;
   }
 }
 @media (max-width: 575px) {
+  .obrazekPes {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
   p {
     font-size: 0.7rem;
+    text-align: justify;
   }
 }
