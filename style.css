@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 body {
+  margin: 0;
   font-family: 'Oswald', sans-serif;
   line-height: 1.5;
   text-align: start;
@@ -107,10 +108,10 @@ ul {
   color: #413e3e;
 }
 .ikonka {
-  width: 4rem;
+  width: 2.5rem;
   position: relative;
   left: auto;
-  top: 17px;
+  top: 5px;
 }
 /*.ucetAregistrace {
   background-color: #ee9b00;
@@ -203,7 +204,7 @@ h1 {
 .obrazkyDiv {
   display: flex;
   flex-direction: column;
-  background-color: #82886f;
+  background-color: #d0b8ac;
   border-radius: 10px;
 }
 .miniaturyDiv {
@@ -265,7 +266,7 @@ ul label {
 }
 input {
   width: 100%;
-  min-height: 2.8rem;
+  min-height: 1.5rem;
   font-size: 1rem;
 }
 .buttonVyber {
@@ -290,6 +291,39 @@ input {
   font-weight: normal;
   text-align: left;
   font-size: medium;
+}
+.container {
+  max-width: 45rem;
+  margin: auto;
+  background: #d0b8ac;
+  overflow: auto;
+}
+.gallery {
+  margin: 5px;
+  border: 1px solid whitesmoke;
+  width: 160px;
+  float: left;
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+}
+table {
+  border-spacing: 0;
+}
+th,
+td {
+  border-bottom: 1px solid black;
+  text-align: center;
+}
+.pocet {
+  text-align: right;
+  font-size: 1rem;
 }
 /*footer*/
 .paticka {
