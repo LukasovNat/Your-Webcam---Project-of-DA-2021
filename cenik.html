@@ -27,7 +27,7 @@
     <header class="hlavicka">
       <div class="logo">
         <img
-          class="ikonka"
+          class="ikonkaCam"
           src="obrazky/iconmonstr-webcam-4-240.png"
           alt="webka"
         />YOUR WEBCAM
@@ -44,66 +44,89 @@
         <li><a href="uvod.html">Domů</a></li>
         <li><a href="index.html">Podporované web kamery</a></li>
         <li><a href="cenik.html">Ceník</a></li>
-        <li><a href="mujUcet.html"><button><img class="ucetAregistrace" src="obrazky/iconmonstr-user-5.svg">Můj účet</button></a></li>
-        <li><a href="registrace.html"><button><img class="ucetAregistrace" src="obrazky/iconmonstr-edit-5.svg">Zaregistrovat se</button></a></li>
-      </ul>
+        </ul>
+
+        <ul class="menu">
+          <li>
+            <button class="ucetAregistrace">
+              <a href="mujUcet.html"
+                ><img class="ikonka" src="obrazky/iconmonstr-user-5.svg" />Můj
+                účet</a
+              >
+            </button>
+          </li>
+          <li>
+            <button class="ucetAregistrace">
+              <a href="mujUcet.html"
+                ><img
+                  class="ikonka"
+                  src="obrazky/iconmonstr-edit-5.svg"
+                />Zaregistrovat</a
+              >
+            </button>
+          </li>
+        </ul>
     </header>
     <!--Sekce galerie a cenik-->
     <div class="kontejner">
       <section class="fotogalerieCenik" id="dvereGalerie">
       <h2>Galerie a ceník poskytovaných služeb</h2>
+      <h4>Balíček <span style="color: #ee9b00">FREE</span></h4>
       <p>
-        Balíček <span style="color: #ee9b00">FREE</span><br />
         Po přihlášení do uživatelského účtu lze zobrazit historicky poslední
         uložený snímek z kamery. Tato služba je zdarma.
       </p>
+      <h4>Balíček <span style="color: #ee9b00">STANDARD</span></h4>
       <p>
-        Balíček <span style="color: #ee9b00">STANDARD</span><br />
         Po přihlášení do uživatelského účtu lze zobrazit historicky poslední
-        uložený snimek z kamery. V minuatuře dalších pět předešlých snímků. V
-        historii si lze vybrat snímky za posledních 30 dnů.
+        uložený snimek z kamery. V minuatuře snímky pořízené během Vámi definovaného časového úseku (den, týden atd.). V historii si lze vybrat snímky za posledních 30 dnů.
       </p>
       
       <div class="obrazkyDiv">
         <table class="aktualniSnimek" style="border: 2" height=" 400px" width="350px">
           
           <tr>
-            <td><img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"></td>
+            <td><img class="obrazekPesOriginal" src="obrazky/pes zmenšeno.jpg"></td>
              </tr>
           <tr>
             <td>aktualni snimek</td>
           </tr>
         </table>
         <div class="miniaturyDiv">
-        <table class="miniatury" style="border: 2" height="200px" width="650px">
-          <tr>
-            <td><img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"></td>
-            <td><img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"></td>
-            <td><img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"></td>
-            <td><img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"></td>
-            <td><img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"></td>
-          </tr>
-          <tr class="textKObrazkum">
-            <td>obrazek c. 1</td>
-            <td>obrazek c. 2</td>
-            <td>obrazek c. 3</td>
-            <td>obrazek c. 4</td>
-            <td>obrazek c. 5</td>
-          </tr>
-        </table>
+        <div class="obrazekKontejner">
+          <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"/>
+          <span class="obrazekPopis">Popisek</span>
         </div>
-       <!-- <ul class="fotkyCenik">
-          <li class="obrazekDvereOriginal"src="obrazky/reddoor.jpg" alt="dvere"></li>
-          <li class="obrazekPes"src="obrazky/pes zmenšeno.jpg" alt="pes na pohovce"></li>
-          <li class="obrazekPes"src="obrazky/pes zmenšeno.jpg" alt="pes na pohovce"></li>
-          <li class="obrazekPes"src="obrazky/pes zmenšeno.jpg" alt="pes na pohovce"></li>
-          <li class="obrazekPes"src="obrazky/pes zmenšeno.jpg" alt="pes na pohovce"></li>
-        </ul>-->
-      
-     <!-- <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg" alt="dvere" />
-      <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg" alt="dvere" />
-      <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg" alt="dvere" />
-      <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg" alt="dvere" />-->
+        <div class="obrazekKontejner">
+          <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"/>
+          <span class="obrazekPopis">Popisek</span>
+        </div>
+        <div class="obrazekKontejner">
+          <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"/>
+          <span class="obrazekPopis">Popisek</span>
+        </div>
+        <div class="obrazekKontejner">
+          <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"/>
+          <span class="obrazekPopis">Popisek</span>
+        </div>
+        <div class="obrazekKontejner">
+          <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"/>
+          <span class="obrazekPopis">Popisek</span>
+        </div>
+        <div class="obrazekKontejner">
+          <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"/>
+          <span class="obrazekPopis">Popisek</span>
+        </div>
+        <div class="obrazekKontejner">
+          <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"/>
+          <span class="obrazekPopis">Popisek</span>
+        </div>
+        <div class="obrazekKontejner">
+          <img class="obrazekPes" src="obrazky/pes zmenšeno.jpg"/>
+          <span class="obrazekPopis">Popisek</span>
+        </div>
+        </div>
+       
       </div>
     </div>
     </section>
