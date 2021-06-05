@@ -174,8 +174,8 @@ p {
   font-family: sans-serif;
 }
 .uvodText {
-  font-family: 'Oswald';
-  font-size: 1.2rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.3rem;
   color: #413e3e;
   padding: 65px 17px;
   /*background-color: rgb(206, 179, 110);*/
