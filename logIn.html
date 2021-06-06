@@ -58,7 +58,7 @@
       <ul class="menu">
         <li>
           <button class="ucetAregistrace">
-            <a href="logIn.html"
+            <a href="mujUcet.html"
               ><img
                 class="ikonka"
                 src="obrazky/iconmonstr-user-5.svg"
@@ -78,29 +78,21 @@
         </li>
       </ul>
     </header>
-    <div class="uvodStranaSPozadim">
-      <div class="kontejner">
-        <p class="uvodSlogan">
-          <span style="color: whitesmoke">
-            Sledujte snímky z Vaší webové kamery ať už jste</span
-          >
-          kdekoliv.
-        </p>
-
-        <div class="tlacitko">
-          <a href="uvod.html">Chci se dozvědět více</a>
-        </div>
-      </div>
-    </div>
-    <div class="vlozenyDiv">
-      <p class="uvodText">
-        Už se nemusíte obávat o své auto před domem, ani pohybu dětí u
-        bazénu.<br />
-        Vámi nasnímané fotky Vám zpětně prezentujeme tak, jak právě potřebujete.
+    <div class="prihlaseniUzivatelskyUcet">
+      <p class="prihlaseniUzivatelskyUcet--nadpis">
+        Přihlášení do uživatelského účtu
+      </p>
+      <p class="prihlaseniUzivatelskyUcet--uvitani">
+        Již mám vytvořený uživatelský účet. Prosím vložte svoji e-mailovou
+        adresu a heslo:
       </p>
     </div>
-    <footer class="paticka">
-      <p>&copy; N&K&J DA WEB 2021</p>
-    </footer>
+    <div class="prihlaseniUzivatelskyUcet--div">
+      <form method="POST" class="formularRegistrace" action="https://">
+        <label>Email: <input type="email" name="email" /></label>
+        <label>Heslo: <input type="password" name="heslo" /></label>
+        <button type="submit">Přihlásit se</button>
+      </form>
+    </div>
   </body>
 </html>

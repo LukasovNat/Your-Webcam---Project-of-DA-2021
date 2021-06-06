@@ -93,6 +93,7 @@ a:hover {
   background-color: darkgray;
   color: white;
   margin: 0;
+  border-radius: 1.5rem;
 }
 .menu {
   display: flex;
@@ -390,6 +391,38 @@ td {
 .ucetFiltr {
   font-size: 1rem;
   text-align: start;
+}
+/*stylovani prihlaseni do uzivatelskeho uctu*/
+.prihlaseniUzivatelskyUcet {
+  padding: 10px 50px;
+  background-image: url('obrazky/muj\ ucet\ obrazek.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  max-width: 60%;
+  margin: auto;
+  height: 500px;
+  margin-top: 20px;
+}
+.prihlaseniUzivatelskyUcet--nadpis {
+  font-size: 4rem;
+  text-align: center;
+  color: #f1f1f1;
+  font-family: 'Oswald';
+}
+.prihlaseniUzivatelskyUcet--div {
+  width: 43rem;
+  height: 10rem;
+  margin: auto;
+  margin-top: -120px;
+  background-color: #d0b8ac;
+}
+.prihlaseniUzivatelskyUcet--uvitani {
+  font-size: 2rem;
+  text-align: center;
+  color: #f1f1f1;
+  font-family: 'Oswald';
 }
 /*footer*/
 .paticka {
