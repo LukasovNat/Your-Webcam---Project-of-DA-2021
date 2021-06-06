@@ -89,10 +89,28 @@
     </div>
     <div class="prihlaseniUzivatelskyUcet--div">
       <form method="POST" class="formularRegistrace" action="https://">
+        <!--Zacatek poli uctu-->
+        <fieldset>
+          <h4>Jsem nový zákazník</h4>
+          <ul class="formularovePole">
+            <li>
+              <label for="email">E-mail: </label>
+              <input type="email" id="email" name="email" class="velke" />
+            </li>
+            <li>
+              <label for="heslo">Heslo: </label>
+              <input type="heslo" id="heslo" name="heslo" class="velke" />
+            </li>
+          </fieldset>
+          <fieldset>
+            <input type="submit" class="vytvorit_ucet" value="Potvrdit">
+          </fieldset>
+        </form>
+      <!--<form method="POST" class="formularRegistrace" action="https://">
         <label>Email: <input type="email" name="email" /></label>
         <label>Heslo: <input type="password" name="heslo" /></label>
         <button type="submit">Přihlásit se</button>
-      </form>
+      </form>-->
     </div>
   </body>
 </html>
